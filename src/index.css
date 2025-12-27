@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent: #D4FF00;
+  --color-k-black: #050506;
+  --color-k-dark: #0D0D0E;
+}
+
+body {
+  background: radial-gradient(circle at center, #0D0D0E 0%, #050506 100%);
+  color: #F8F8F8;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+.accent-glow { text-shadow: 0 0 15px rgba(212, 255, 0, 0.4); }
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.grain-overlay {
+  position: fixed; inset: 0; pointer-events: none; z-index: 9999;
+  opacity: 0.03; background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+}
