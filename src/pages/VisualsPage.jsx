@@ -15,7 +15,7 @@ const VisualsPage = () => {
       title: 'Solstice Protocol', 
       location: 'Mirissa Coast', 
       date: 'AUG 2025', 
-      img: '/Images/Image1.jpg',
+      img: '/Images/Visual1.jpg',
       specs: '35MM / ISO 400',
       span: 'md:col-span-2 md:row-span-2'
     },
@@ -25,7 +25,7 @@ const VisualsPage = () => {
       title: 'Obsidian Night', 
       location: 'Port City', 
       date: 'JUL 2025', 
-      img: '/Images/Image1.jpg',
+      img: '/Images/Visual2.jpg',
       specs: 'LEICA Q2 / f1.8',
       span: 'md:col-span-1 md:row-span-1'
     },

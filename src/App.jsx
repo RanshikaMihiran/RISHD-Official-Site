@@ -10,6 +10,8 @@ import SessionsPage from './pages/SessionsPage';
 import ContactPage from './pages/ContactPage';
 import BookNowPage from './pages/BookNowPage';
 import VisualsPage from './pages/VisualsPage';
+import GearPage from './pages/GearPage';
+import EPKPage from './pages/EPKPage';
 
 // --- CONFIGURATION ---
 const HERO_IMAGES = [
@@ -41,7 +43,7 @@ const Navbar = () => {
           KRISHD<span className="text-accent italic">.</span>
         </Link>
         <div className="hidden lg:flex items-center gap-12">
-          {[{ n: 'Archives', p: '/archives' }, { n: 'Sessions', p: '/tour' },{ n: 'Visuals', p: '/visuals' },{ n: 'Contact', p: '/contact' }].map((item) => (
+          {[{ n: 'Archives', p: '/archives' }, { n: 'Sessions', p: '/tour' },{ n: 'Visuals', p: '/visuals' },{ n: 'Setup', p: '/gear' }, { n: 'EPK', p: '/epk' }, { n: 'Contact', p: '/contact' }].map((item) => (
             <Link key={item.n} to={item.p} className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/50 hover:text-accent transition-colors">
               {item.n}
             </Link>
@@ -381,6 +383,8 @@ export default function App() {
                 <Route path="/contact" element={<ContactPage />} />
                 <Route path="/book" element={<BookNowPage />} />
                 <Route path="/visuals" element={<VisualsPage />} />
+                <Route path="/gear" element={<GearPage />} />
+                <Route path="/epk" element={<EPKPage />} />
               </Routes>
             </AnimatePresence>
           </main>
